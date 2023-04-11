@@ -1,36 +1,21 @@
-export const meta = () => {
-  return [{ title: "New Remix App" }];
-};
+import Header from "~/shared/components/Header";
+import Hero from "~/shared/components/Hero";
+import Articles from "~/shared/components/Articles";
+import Footer from "~/shared/components/Footer";
+import Info from "~/shared/components/Info";
+
+export const meta = () => [{ title: "Frontend Mentor | Easybank landing page" }];
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+    <div className="mx-auto" style={{ fontFamily: "Public Sans, sans-serif", lineHeight: "1.4" }}>
+      <Header />
+      <main className="relative min-h-screen bg-white sm:flex flex-col sm:items-center sm:justify-center md:flex flex-row">
+        <Hero />
+        <Info />
+        <Articles />
+      </main>
+      <Footer />
     </div>
   );
 }
