@@ -1,0 +1,90 @@
+body{
+  font-size: 18px;
+}
+
+.header {
+  z-index: 3;
+  position: relative;
+  height: 4.5rem
+}
+
+.header nav button {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .header nav button {
+      display: block;
+      margin-left: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 930px) {
+    .header nav button {
+      margin-left: 10rem !important;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .header nav button {
+      margin-left: 20rem !important;
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+    .header nav button {
+      margin-left: 30rem !important;
+    }
+}
+
+.hero {
+  background-image: url("/../images/bg-intro-desktop.svg");
+  background-position: top -16rem left -10rem;
+  background-size: 50rem;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 800px) {
+  .hero {
+    background-image: url("/../images/bg-intro-desktop.svg");
+    background-position: top -26rem left 55rem;
+    background-size: 110rem;
+    background-repeat: no-repeat;
+    min-height: 28rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .hero {
+    background-image: url("/../images/bg-intro-desktop.svg");
+    background-position: top -26rem left 55rem;
+    background-size: 110rem;
+    background-repeat: no-repeat;
+    min-height: 35rem;
+  }
+}
+
+.pop-out {
+  position: absolute;
+  top: -6.3125rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .pop-out {
+    position: absolute;
+    z-index: 2;
+    top: -6.3125rem;
+    left: 25rem;
+    height: 47rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .pop-out {
+    position: absolute;
+    z-index: 2;
+    top: -6.3125rem;
+    left: 50rem;
+    height: 47rem;
+  }
+}
